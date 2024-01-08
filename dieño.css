@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.blogs.es/7ee69f/bloodborne-2/1366_2000.jpeg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px); 
+    z-index: -1;
+}
+.titulo-web {
+    font-family: Didot, serif;
+    text-align: center;
+    color: #ff0000; 
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.portada {
+    width: 500px;
+    height: 400px;
+    background-image: url('https://i.blogs.es/9ef0bc/image_2022-05-30_180411564/1366_2000.png');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #33ff4e;
+    font-family: 'Courier New';
+}
+
+.recuadro {
+    width: 48%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    transition: transform 0.3s ease-in-out;
+}
+
+.recuadro:hover {
+    transform: scale(1.1);
+}
+
+.recuadros-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.recuadro-con-imagen {
+    width: 700px;
+    height: 180px;
+    background-image: url('https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/01/ps-logo.jpg?tf=3840x');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(255, 51, 228);
+    transition: transform 0.3s ease-in-out;
+    font-family: 'Courier New';
+}
+.recuadro-con-imagen:hover {
+    transform: scale(1.1);
+}
